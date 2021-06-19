@@ -18,6 +18,7 @@ import { MedidasPageComponent } from './components/medidas-page/medidas-page.com
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { DoencasCardComponent } from './components/doencas-card/doencas-card.component';
+import { RegioesCardComponent } from './components/regioes-card/regioes-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DoencasCardComponent } from './components/doencas-card/doencas-card.com
     DoencasPageComponent,
     PanoramaPageComponent,
     MedidasPageComponent,
-    DoencasCardComponent
+    DoencasCardComponent,
+    RegioesCardComponent
   ],
   imports: [
     BrowserModule,

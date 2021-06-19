@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ProblemasApiService } from 'src/app/services/problemas-api.service';
+import { ProblemasRegioesApiModel } from 'src/app/services/problemas-regioes-api-model';
+import { RegioesApiModel } from 'src/app/services/regioes-api-model';
+import { RegioesApiService } from 'src/app/services/regioes-api.service';
 
 @Component({
   selector: 'app-panorama-page',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanoramaPageComponent implements OnInit {
 
-  constructor() { }
+  listaRegioes: RegioesApiModel [] = [];
+
+
+  constructor(public RegioesApi: RegioesApiService) { }
 
   ngOnInit(): void {
+    this.RegioesApi.get().subscribe({
+      next: (retornoDaApi) => {
+        this.listaRegioes = retornoDaApi;
+      }
+    });
+​
   }
 
 }
