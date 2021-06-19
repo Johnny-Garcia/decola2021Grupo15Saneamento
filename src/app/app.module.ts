@@ -17,6 +17,7 @@ import { PanoramaPageComponent } from './components/panorama-page/panorama-page.
 import { MedidasPageComponent } from './components/medidas-page/medidas-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import { DoencasCardComponent } from './components/doencas-card/doencas-card.component';
 import { RegioesCardComponent } from './components/regioes-card/regioes-card.component';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { RegioesCardComponent } from './components/regioes-card/regioes-card.com
     DoencasPageComponent,
     PanoramaPageComponent,
     MedidasPageComponent,
+    DoencasCardComponent,
     RegioesCardComponent
   ],
   imports: [

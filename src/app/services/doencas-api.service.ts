@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DoencasApiModel } from './doencas-api-model';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
