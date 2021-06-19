@@ -16,6 +16,8 @@ import { DoencasPageComponent } from './components/doencas-page/doencas-page.com
 import { PanoramaPageComponent } from './components/panorama-page/panorama-page.component';
 import { MedidasPageComponent } from './components/medidas-page/medidas-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { DoencasCardComponent } from './components/doencas-card/doencas-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageComponent,
     DoencasPageComponent,
     PanoramaPageComponent,
-    MedidasPageComponent
+    MedidasPageComponent,
+    DoencasCardComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
