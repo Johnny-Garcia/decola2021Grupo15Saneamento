@@ -1,0 +1,15 @@
+.Id {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+img {
+  max-width: 90vw;
+  border-radius: 5px;
+}
+.cid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
