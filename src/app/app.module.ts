@@ -4,15 +4,39 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuTemplateComponent } from './components/menu-template/menu-template.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { DoencasPageComponent } from './components/doencas-page/doencas-page.component';
+import { PanoramaPageComponent } from './components/panorama-page/panorama-page.component';
+import { MedidasPageComponent } from './components/medidas-page/medidas-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuTemplateComponent,
+    HomePageComponent,
+    DoencasPageComponent,
+    PanoramaPageComponent,
+    MedidasPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
