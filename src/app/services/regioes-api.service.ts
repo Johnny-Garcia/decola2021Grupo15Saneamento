@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { RegioesApiModel } from './regioes-api-model';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
