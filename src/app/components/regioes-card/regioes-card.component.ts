@@ -11,7 +11,7 @@ export class RegioesCardComponent implements OnInit {
 
   @Input() Regiao: RegioesApiModel | undefined;
 
-  @Input() Problema: ProblemasRegioesApiModel | undefined;
+  listaProblemas: ProblemasRegioesApiModel [] = [];
 
   constructor() { }
 

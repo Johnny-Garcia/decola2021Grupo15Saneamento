@@ -12,9 +12,10 @@ import { RegioesApiService } from 'src/app/services/regioes-api.service';
 export class PanoramaPageComponent implements OnInit {
 
   listaRegioes: RegioesApiModel [] = [];
+  listaProblemas: ProblemasRegioesApiModel [] = [];
 
 
-  constructor(public RegioesApi: RegioesApiService) { }
+  constructor(public RegioesApi: RegioesApiService, public ProblemasApi: ProblemasApiService) { }
 
   ngOnInit(): void {
     this.RegioesApi.get().subscribe({
@@ -22,6 +23,12 @@ export class PanoramaPageComponent implements OnInit {
         this.listaRegioes = retornoDaApi;
       }
     });
+
+    this.ProblemasApi.get().subscribe({
+      next: (retornoProblemas) => {
+        this.listaProblemas = retornoProblemas;
+      }
+    })
 ​
   }
 

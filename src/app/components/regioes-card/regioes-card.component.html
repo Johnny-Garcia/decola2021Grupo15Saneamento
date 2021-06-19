@@ -11,8 +11,12 @@
     <span >{{Regiao?.regiao}}</span>
   </div>
 
-  <div>
-
-  </div>
+  <div class="prob">
+    <h3 class="titulo">Problemas</h3>
+      <span *ngFor= "let problema of Regiao?.problemas" >
+        {{problema.descricao}}
+        {{problema.porcentagem}}
+      </span>
+    </div>
 
 </mat-card>
