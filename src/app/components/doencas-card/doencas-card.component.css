@@ -7,7 +7,10 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
-​
-.info .price {
-  font-weight: bold;
+.doencas{
+  text-align: center;
+  font-size: 20px;
+}
+mat-card{
+  background-color: rgb(194, 212, 245);
 }
