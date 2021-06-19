@@ -11,11 +11,11 @@
     <span >{{Regiao?.regiao}}</span>
   </div>
 
-  <div class="prob">
-    <h3 class="titulo">Problemas</h3>
-      <span *ngFor= "let problema of Regiao?.problemas" >
+  <div >
+    <h3 class="titulo">Dados dos Problemas:</h3>
+      <span *ngFor= "let problema of Regiao?.problemas" class = "dados">
         {{problema.descricao}}
-        {{problema.porcentagem}}
+        {{problema.porcentagem}} % <br>
       </span>
     </div>
 

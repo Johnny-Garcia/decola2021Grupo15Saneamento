@@ -13,3 +13,14 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+.titulo{
+  text-align: center;
+}
+.titulo .dados{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+mat-card{
+  background-color: rgb(194, 212, 245);
+}
